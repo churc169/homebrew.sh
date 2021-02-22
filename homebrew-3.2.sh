@@ -18,6 +18,8 @@
 
 # 2021-01-11 | Support for osx arm64 added by Shawn Smith (https://github.com/HelixSpiral)
 
+# 2021-02-22 | Removed double quotes from chmod and chown commands
+
 # Set up variables and functions here
 consoleuser="$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')"
 UNAME_MACHINE="$(uname -m)"
