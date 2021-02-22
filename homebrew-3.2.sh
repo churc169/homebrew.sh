@@ -100,8 +100,8 @@ if [[ ! -e "${HOMEBREW_PREFIX}/bin/brew" ]]; then
     mkdir -p "${HOMEBREW_PREFIX}/include" "${HOMEBREW_PREFIX}/lib" "${HOMEBREW_PREFIX}/opt" "${HOMEBREW_PREFIX}/etc" "${HOMEBREW_PREFIX}/sbin"
     mkdir -p "${HOMEBREW_PREFIX}/share/zsh/site-functions" "${HOMEBREW_PREFIX}/var"
     mkdir -p "${HOMEBREW_PREFIX}/share/doc" "${HOMEBREW_PREFIX}/man/man1" "${HOMEBREW_PREFIX}/share/man/man1"
-    chown -R "${consoleuser}":_developer "${HOMEBREW_PREFIX}/*"
-    chmod -R g+rwx "${HOMEBREW_PREFIX}/*"
+    chown -R "${consoleuser}":_developer ${HOMEBREW_PREFIX}/*
+    chmod -R g+rwx ${HOMEBREW_PREFIX}/*
     chmod 755 "${HOMEBREW_PREFIX}/share/zsh" "${HOMEBREW_PREFIX}/share/zsh/site-functions"
 
     # Create a system wide cache folder  
